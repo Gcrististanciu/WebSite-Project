@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <style>
+        .outer-box{
+            background-color:purple;
+            padding:10px;
+            margin-right:750px;
+            margin-left:400px;
+        }
+        .inner-box{
+            background-color:blue;
+            padding:10px;
+        }
+        #yellow-text{
+            color:yellow;
+        }
+        #white-text{
+            color:white;
+        }
+        .red-box{
+            background-color:red;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <p id="yellow-text">Yellow Text</p>
+            <div class="red-box">
+                <p class="white-text">White Text</p>
+            </div>
+            <p id="yellow-text">Yellow Text</p>
+            <div class="red-box">
+                <p class="white-text">White Text</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
