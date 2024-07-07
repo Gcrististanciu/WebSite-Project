@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Postioning</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <style>
+        .red-circle{
+            position:absolute;
+            margin-left:250px;
+            margin-top:150px;
+            height:200px;
+            width:200px;
+            background-color:red;
+            border-radius:50%;
+            border:4px solid white;
+        }
+        .blue-box{
+            background-color: blue;
+            margin-top:200px;
+            margin-left:200px;
+            height:300px;
+            width:500px;
+            position:relative;
+            border:5px dashed black;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="blue-box">
+        <div class="red-circle"></div>
+    </div>
+</body>
+</html>
